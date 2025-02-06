@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="CSS/nullstyle.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/fonts.css" />
+    <link
+      rel="shortcut icon"
+      href="img/free-icon-weather-9739402.png"
+      type="image/x-icon"
+    />
+
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper-base">
+        <div class="info-weather">
+          <div class="info-deg"></div>
+          <div>
+            <div class="info-title"></div>
+            <div class="info-data"></div>
+            <div class="info-weather__condit"></div>
+          </div>
+          <img class="info-weather__icon" src="" />
+        </div>
+        <div class="swiper weather-forecast__list">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper weather-forecast__slider"></div>
+          <div class="swiper-pagination sw"></div>
+          <!-- If we need scrollbar -->
+        </div>
+      </div>
+      <div class="weather-menu">
+        <div class="weather-menu__btn"></div>
+        <form class="weather-menu__serach">
+          <input class="input__serach" placeholder="Search Location..." />
+          <input type="submit" class="btn__subnit" value="" />
+        </form>
+        <h2 class="weather-menu__title">Weather Details...</h2>
+        <div class="weather-menu__list"></div>
+        <h2 class="weather-menu__forecast-title">5-day forcast</h2>
+        <div class="weather-menu__forecast-list-days"></div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="JS/app.js"></script>
+  </body>
+</html>
